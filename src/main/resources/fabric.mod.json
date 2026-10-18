@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "thefirsstmod",
+	"version": "${version}",
+	"name": "TheFIrsstMod",
+	"description": "这是作者创作的第一个模组！支持一下嘛...喵~~~",
+	"authors": [
+		"韶末本末（也可以是良穗~~）"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/thefirsstmod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.bin.thefirstmod.TheFIrsstMod"
+		],
+		"fabric-datagen": [
+			"com.bin.thefirstmod.TheFIrsstModDataGenerator"
+		],
+		"client": [
+			"com.bin.thefirstmod.TheFIrsstModClientInit"
+		]
+	},
+	"mixins": [
+		"thefirsstmod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.19.5",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
